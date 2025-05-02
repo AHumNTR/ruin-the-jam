@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg1yjykxf627e"]
+
+[ext_resource type="Texture2D" uid="uid://dyrgvcylklf10" path="res://icon.svg" id="1_wtcfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+texture = ExtResource("1_wtcfe")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="."]
+position = Vector2(1, 185)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2"]
+scale = Vector2(8.44, 1)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D2"]
+scale = Vector2(8.44, 1)
+texture = ExtResource("1_wtcfe")
